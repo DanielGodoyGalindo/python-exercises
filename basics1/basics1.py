@@ -69,4 +69,73 @@ def calc_age():
     print(f"Your age should be {current_year - int(birth_year)}")
 
 
-calc_age()
+# calc_age()
+
+
+# Exercise 6
+def even_numbers(start_number: int, end_number: int):
+    if end_number < start_number:
+        start_number, end_number = end_number, start_number
+    for i in range(start_number, end_number):
+        if i % 2 == 0:
+            print(i)
+
+
+# even_numbers(1, 20)
+
+
+#  Exercise 7
+def multiplication_table():
+    while True:
+        number = input("Please, type a number: ")
+        if not number.isnumeric():
+            print("Only numbers allowed!")
+        else:
+            number = int(number)
+            break
+    for i in range(1, 11):
+        print(f"{i} x {number} = {i * number}")
+
+
+# multiplication_table()
+
+
+# Exercise 8
+def countdown():
+    for i in range(10, 0, -1):
+        print(i)
+    print("Blast off!")
+
+
+# countdown()
+
+
+# Exercise 9
+def secret_password():
+    user_input = input("Type the password: ")
+    if user_input != "secret123":
+        print("Access denied.")
+    else:
+        print("Welcome.")
+
+
+# secret_password()
+
+
+# Exercise 10
+def number_type():
+    while True:
+        try:
+            number = float(input("Type a number: "))
+            break
+        except ValueError:
+            print("This is not a number!")
+    if number > 0:
+        print(f"The number {number} is positive.")
+    elif number < 0:
+        print(f"The number {number} is negative.")
+    else:
+        print(f"The number {number} is zero.")
+
+
+# number_type()
