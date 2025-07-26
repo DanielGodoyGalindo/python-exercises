@@ -1,4 +1,4 @@
-from datetime import datetime
+from collections import Counter
 
 
 # 1. List Statistics
@@ -47,9 +47,50 @@ def no_duplicates_list():
 # 3. Palindrome checker
 def palindrome_checker(word: str):
     word = word.lower()
-    if word == word[::-1]: # slicing
-        print(word , "is a palindrome!")
+    if word == word[::-1]:  # slicing
+        print(word, "is a palindrome!")
     else:
         print(word, "is not a palindrome :(")
 
+
 # palindrome_checker("Racecar")
+
+
+# 4. Count Word Occurrences
+def count_word_occurrences():
+    sentence = input("Type a sentence: ")
+    split_sentece = sentence.lower().split()
+    # Use Counter, a class that counts repeated elements in a collection
+    counted_words = Counter(split_sentece)
+    # dict() creates a dictionary using counter object
+    print(dict(counted_words))
+
+
+# count_word_occurrences()
+
+
+# 5. Find Prime Numbers in a Range
+def find_prime_numbers():
+    prime_numbers = []
+    number = int(input("Insert a number"))
+    num_copy = number
+    while number > 0:
+        if is_prime(number):
+            prime_numbers.append(number)
+        number -= 1
+    prime_numbers.reverse()
+    print(f"The prime numbers from 1 to {num_copy} are {prime_numbers}")
+
+
+def is_prime(number: int) -> bool:
+    count = 0
+    divisor = number
+    while number > 0:
+        if divisor % number == 0:
+            count += 1
+        number -= 1
+    # Ternary operator
+    return True if count == 2 else False
+
+
+find_prime_numbers()
