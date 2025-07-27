@@ -93,4 +93,58 @@ def is_prime(number: int) -> bool:
     return True if count == 2 else False
 
 
-find_prime_numbers()
+# find_prime_numbers()
+
+
+# 6. List Intersection
+def list_intersection():
+    # Get numbers
+    first_numbers = input("Insert numbers separarated by commas: ")
+    second_numbers = input("Insert more numbers separarated by commas: ")
+    first_list = first_numbers.replace(" ", "").split(",")
+    second_list = second_numbers.replace(" ", "").split(",")
+    big_list = first_list + second_list
+    repeated = set()  # use set to store unique numbers, not repeated
+    checked = set()
+    # Check for duplicates
+    for number in big_list:
+        if number in checked:
+            repeated.add(number)
+        else:
+            checked.add(number)
+    print(f"Numbers repeated in both lists: {repeated}")
+
+
+# list_intersection()
+
+
+# 7. FizzBuzz with List Output
+def fizz_buzz():
+    num_list = []
+    for number in range(1, 101):
+        if number % 3 == 0 and number % 5 == 0:
+            num_list.append("FizzBuzz")
+        elif number % 3 == 0:
+            num_list.append("Fizz")
+        elif number % 5 == 0:
+            num_list.append("Buzz")
+        else:
+            num_list.append(number)
+    print(num_list)
+
+
+# fizz_buzz()
+
+
+# 8. Find Longest Word
+def longest_word():
+    sentence = input("Insert a sentence: ")
+    sentence_list = sentence.split(" ")
+    num_char = 0
+    for word in sentence_list:
+        if len(word) > num_char:
+            longest = word
+            num_char = len(word)
+    print(f"The longest word is {longest}")
+
+# longest_word()
