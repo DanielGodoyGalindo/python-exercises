@@ -147,4 +147,40 @@ def longest_word():
             num_char = len(word)
     print(f"The longest word is {longest}")
 
+
 # longest_word()
+
+
+# 9. Sort Numbers by Even/Odd
+def sort_numbers():
+    user_input = ""
+    even_numbers = []
+    odd_numbers = []
+    while True:
+        user_input = input("Insert a number (EXIT to stop): ").upper()
+        if user_input == "EXIT":
+            break
+        try:
+            number = int(user_input)
+            if number % 2 == 0:
+                even_numbers.append(number)
+            else:
+                odd_numbers.append(number)
+        except ValueError:
+            print("Number not valid! Type a number or EXIT to stop: ")
+    print("Even numbers: ", even_numbers)
+    print("Odd numbers: ", odd_numbers)
+
+
+# sort_numbers()
+
+
+# 10. List Rotation
+def list_rotation(num_list: list, number: int):
+    number = number % len(num_list)
+    # assure that the number is less than the length
+    print(num_list[-number:] + num_list[:-number])
+    # slice from position -3 to the end + start to position -3
+
+
+# list_rotation([1, 2, 3, 4, 5], 3)
