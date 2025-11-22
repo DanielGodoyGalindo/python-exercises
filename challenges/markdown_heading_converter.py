@@ -21,7 +21,7 @@ import re
 
 
 def convert(heading):
-    if re.search("^\s*#{1,6}\s+\w+", heading) == None:
+    if re.search("^\s*#{1,6}\s+\w+", heading) is None:
         return "Invalid format"
     heading = heading.strip()
     splitted = heading.split(" ")
@@ -32,3 +32,32 @@ def convert(heading):
 
 
 print(convert("  ###  My level 3 heading"))
+
+"""
+def convert(heading):
+    # Regex pattern:
+    # ^\s*       → allow any number of leading spaces
+    # (#{1,6})   → capture 1 to 6 hash symbols (this determines the heading level)
+    # \s+        → require at least one space after the hashes
+    # (.*\S)     → capture the heading text, ensuring it ends with a non-space character
+    # \s*$       → allow trailing spaces until the end of the line
+    pattern = r"^\s*(#{1,6})\s+(.*\S)\s*$"
+
+    # Try to match the pattern against the input string
+    match = re.match(pattern, heading)
+
+    # If the string does NOT match the required Markdown heading format, return error
+    if not match:
+        return "Invalid format"
+
+    # Extract the captured groups:
+    # hashes → the sequence of # symbols
+    # text   → the actual heading text
+    hashes, text = match.groups()
+
+    # Heading level is the number of # characters
+    level = len(hashes)
+
+    # Return the equivalent HTML heading using f-string formatting
+    return f"<h{level}>{text}</h{level}>"
+"""
