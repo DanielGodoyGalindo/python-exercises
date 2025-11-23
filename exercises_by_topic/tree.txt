@@ -1,0 +1,21 @@
+exercises_by_topic/
+    basics/
+        variables.py
+        input_output.py
+    collections/
+        tuples.py
+        lists.py
+        dicts.py
+        sets.py
+    functions/
+        scope.py
+        closures.py
+    algorithms/
+        recursion.py
+        sorting.py
+    oop/
+        classes.py
+        inheritance.py
+    advanced/
+        generators.py
+        decorators.py
