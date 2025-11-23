@@ -5,14 +5,23 @@
 <ul>
     <li>Basics1</li>
     <li>Basics2</li>
+    <li>Exercises by topic
+        <ul>
+            <li>Collections</li>
+            <ul>
+                <li>Tuples</li>
+            </ul>
+        </ul>
+    </li>
     <li><a href="https://www.freecodecamp.org/learn/daily-coding-challenge/archive">FCC Daily Challenges</a>
-        <ol>
+        <ul>
             <li>LCM</li>
             <li>Longest word</li>
             <li>Fingerprint test</li>
             <li>100 characters</li>
             <li>Markdown heading converter</li>
             <li>Recipe scaler</li>
-        </ol>
+            <li>Rectangle count</li>
+        </ul>
     </li>
 </ul>
