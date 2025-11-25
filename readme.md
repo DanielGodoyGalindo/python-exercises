@@ -13,7 +13,7 @@
             <li>Collections</li>
             <ul>
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/tuples.py">Tuples</a></li>
-                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/lists.py"></a>Lists</li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/lists.py">Lists</a></li>
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/dicts.py">Dictionaries</a></li>
             </ul>
         </ul>

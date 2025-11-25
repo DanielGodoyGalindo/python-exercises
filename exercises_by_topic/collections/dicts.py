@@ -13,40 +13,40 @@ Mostrar cuántos empleados hay por departamento
 """
 
 
-def employees():
+def employees_exercise():
     employees = []
     user_input = ""
     while user_input != "end":
-        show_menu()
-    while True:
-        employee_name = input("Please, enter a employee name (type 'end' to quit): ")
-        if employee_name.lower() == "end":
+        user_input = show_menu()
+        if user_input == "1":
+            employee = add_user()
+            if employee:
+                employees.append(employee)
+                print("User added!")
+        elif user_input == "2":
+            print("Search user function")
+        elif user_input == "3":
+            if employees:
+                print(f"Employees: {employees}")
+            else:
+                print("No employees at the moment!")
+        elif user_input == "4":
+            if employees:
+                print(f"Avg salary: {avg_salary(employees)}")
+            else:
+                print("No employees at the moment!")
+        elif user_input == "5":
+            print("Employees per department function")
+        elif user_input == "6":
             break
-        # name
-        if not validate_employee_name_and_department(employee_name):
-            continue
-        department_name = input("Enter a department name: ")
-        # department
-        if not validate_employee_name_and_department(department_name):
-            continue
-        # salary
-        salary = input("Enter salary: ")
-        if not validate_salary(salary):
-            continue
-        employee = {
-            "name": employee_name,
-            "department": department_name,
-            "salary": salary,
-        }
-        employees.append(employee)
-    return employees
+    return "BYE"
 
 
 def show_menu():
     print(
-        "1. Add user\n2. Search user\n3.Show all users\n4. Calculate average salary\n5. NUmber of employees per department"
+        "******* MENU *******\n1. Add user\n2. Search user\n3. Show all users\n4. Calculate average salary\n5. Number of employees per department\n6. End\n"
     )
-    option = input("Select an option")
+    option = input("Select an option: ")
     return option
 
 
@@ -70,4 +70,31 @@ def validate_salary(salary):
     return True
 
 
-print(employees())
+def add_user():
+    while True:
+        employee_name = input("Please, enter a employee name (type 'end' to quit): ")
+        if employee_name.lower() == "end":
+            return None
+        # name
+        if not validate_employee_name_and_department(employee_name):
+            continue
+        department_name = input("Enter a department name: ")
+        # department
+        if not validate_employee_name_and_department(department_name):
+            continue
+        # salary
+        salary = input("Enter salary: ")
+        if not validate_salary(salary):
+            continue
+        employee = {
+            "name": employee_name,
+            "department": department_name,
+            "salary": int(salary),
+        }
+        return employee
+    
+def avg_salary(employees):
+    return sum(emp["salary"] for emp in employees) / len(employees)
+
+print(employees_exercise())
+
