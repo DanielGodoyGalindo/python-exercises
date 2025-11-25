@@ -1,6 +1,9 @@
-<h1  align="center"><b>Python basic exercises</b></h1>
+<h1  align="center"><b>Python Exercises</b></h1>
 
-<p>Basic Python exercises. I'll be updating this repository with new exercises as I learn new features of this language👍</p>
+<div align="center">
+    <p>Python exercises to learn basic and intermediate concepts</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" />
+</div>
 <p>This is the list of exercises so far:</p>
 <ul>
     <li>Basics1</li>
@@ -9,7 +12,9 @@
         <ul>
             <li>Collections</li>
             <ul>
-                <li>Tuples</li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/tuples.py">Tuples</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/lists.py"></a>Lists</li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/dicts.py">Dictionaries</a></li>
             </ul>
         </ul>
     </li>
@@ -25,3 +30,5 @@
         </ul>
     </li>
 </ul>
+
+<p>I'll be updating this repository with new exercises as I learn new features of this language👍</p>
