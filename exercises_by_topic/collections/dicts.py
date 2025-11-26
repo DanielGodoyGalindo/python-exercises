@@ -22,14 +22,14 @@ def employees_exercise():
             employee = add_user()
             if employee:
                 employees.append(employee)
-                print("User added!")
+                print("User added!\n")
         elif user_input == "2":
             employee_name = input("Please insert the name of a employee: ")
             if not employee_name.isdigit():
                 found_employee = search_user(employee_name, employees)
-                print(f"Exployee found: {found_employee}\n") if found_employee else print(
-                    "Employee not found!\n"
-                )
+                print(
+                    f"Exployee found: {found_employee}\n"
+                ) if found_employee else print("Employee not found!\n")
         elif user_input == "3":
             if employees:
                 print(f"Employees: {employees}")
@@ -41,7 +41,11 @@ def employees_exercise():
             else:
                 print("No employees at the moment!\n")
         elif user_input == "5":
-            print("Employees per department function")
+            output = employees_by_department(employees)
+            if output:
+                print(f"Employees by department: {output}\n")
+            else:
+                print("No employees found!\n")
         elif user_input == "6":
             break
     return "BYE"
@@ -49,7 +53,7 @@ def employees_exercise():
 
 def show_menu():
     print(
-        "******* MENU *******\n1. Add user\n2. Search user\n3. Show all users\n4. Calculate average salary\n5. Number of employees per department\n6. End\n"
+        "******* MENU *******\n1. Add user\n2. Search user\n3. Show all users\n4. Calculate average salary\n5. Number of employees by department\n6. End\n"
     )
     option = input("Select an option: ")
     return option
@@ -108,6 +112,17 @@ def search_user(user_name, employees):
         if emp["name"] == user_name:
             return employees[idx]
     return None
+
+
+def employees_by_department(employees):
+    employees_by_department = {}  # dict to store departments and the number of employees
+    for emp in employees:
+        dept = emp["department"]  # get dept name
+        if dept not in employees_by_department:
+            employees_by_department[dept] = 1
+        else:
+            employees_by_department[dept] += 1
+    return employees_by_department
 
 
 print(employees_exercise())
