@@ -24,17 +24,22 @@ def employees_exercise():
                 employees.append(employee)
                 print("User added!")
         elif user_input == "2":
-            print("Search user function")
+            employee_name = input("Please insert the name of a employee: ")
+            if not employee_name.isdigit():
+                found_employee = search_user(employee_name, employees)
+                print(f"Exployee found: {found_employee}\n") if found_employee else print(
+                    "Employee not found!\n"
+                )
         elif user_input == "3":
             if employees:
                 print(f"Employees: {employees}")
             else:
-                print("No employees at the moment!")
+                print("No employees at the moment!\n")
         elif user_input == "4":
             if employees:
                 print(f"Avg salary: {avg_salary(employees)}")
             else:
-                print("No employees at the moment!")
+                print("No employees at the moment!\n")
         elif user_input == "5":
             print("Employees per department function")
         elif user_input == "6":
@@ -92,9 +97,17 @@ def add_user():
             "salary": int(salary),
         }
         return employee
-    
+
+
 def avg_salary(employees):
     return sum(emp["salary"] for emp in employees) / len(employees)
 
-print(employees_exercise())
 
+def search_user(user_name, employees):
+    for idx, emp in enumerate(employees):
+        if emp["name"] == user_name:
+            return employees[idx]
+    return None
+
+
+print(employees_exercise())
