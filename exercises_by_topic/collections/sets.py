@@ -1,4 +1,4 @@
-'''
+"""
 🧩 Challenge: Gestión de Invitados con Sets
 🎯 Objetivo:
 
@@ -38,25 +38,46 @@ Arrived guests: {'marta', 'carlos'}
 Guests who arrived and were invited: {'marta'}
 Confirmed but did not arrive: {'ana', 'jorge'}
 Arrived but not invited: {'carlos'}
-'''
+"""
+
 
 def guests_management():
-    ask_for_confirmed_guests()
-    return None
+    print("Enter the confirmed guests:")
+    confirmed_guests = ask_for_guests()
+    print("Enter the arrived guests:")
+    arrived_guests = ask_for_guests()
+    # Confirmed guests
+    print(f"\nConfirmed guests: {confirmed_guests}")
+    # Arrived guests
+    print(f"Arrived guests: {arrived_guests}")
+    # Arrived guests that were invited
+    arrived_invited = confirmed_guests & arrived_guests
+    print(f"Arrived guests that were invited: {arrived_invited}")
+    # Guests who were invited but did not arrive
+    not_arrived_invited = confirmed_guests - arrived_guests
+    print(f"Guests invited but did not come: {not_arrived_invited}")
+    # Guests who came without invitation
+    arrived_not_invited = arrived_guests - confirmed_guests
+    print(f"Guests arrived not invited: {arrived_not_invited}")
+    # Total number of guests that arrived
+    print(f"Number of guests arrived: {len(arrived_guests)}")
+    return "End"
 
-def ask_for_confirmed_guests():
+
+def ask_for_guests():
     guests = set()
-    guest = ""
-    while guest != "end":
-        guest = input("Type the name of a confirmed guest ('end' for exit): ")
-        if not guest.isdigit():
-            guests.add(guest)
-    guests.discard("end")
-    print(guests)
+    while True:
+        guest = input("Type the name of a guest ('end' to finish): ").strip().lower()
+        if guest == "end":
+            break
+        if guest == "":
+            print("Empty input not allowed!")
+            continue
+        if guest.isdigit():
+            print("Guest name must be a text, not a number!")
+            continue
+        guests.add(guest)
     return guests
 
-def ask_for_arrived_guests():
-    guests = set()
-    return guests
 
 print(guests_management())
