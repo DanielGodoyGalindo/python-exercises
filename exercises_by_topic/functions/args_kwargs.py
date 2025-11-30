@@ -24,4 +24,4 @@ def describe_person(name, **details):
     return person
 
 
-print(describe_person("Alex", age=30, job="engineer", country="USA"))
+print(describe_person("Alex", age=30, job="engineer", country="USA", hobbies="golf"))
