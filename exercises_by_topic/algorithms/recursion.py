@@ -60,4 +60,31 @@ def fibonacci(num):
     else:
         return fibonacci(num - 1) + fibonacci(num - 2)
 
+
 print(fibonacci(6))
+
+
+"""
+Ejercicio 4 — contar elementos recursivamente
+
+count_items([1,2,3,4])  # 4
+
+No usar len().
+"""
+
+
+def count_items(nums):
+    # Base case: when the list is empty, return 0 (no more elements to count)
+    if nums == []:
+        return 0
+
+    # Remove the first element and count +1
+    nums.pop(0)
+
+    # IMPORTANT:
+    # For recursion on a list, we must always reduce the size
+    # to ensure the function eventually reaches the base case.
+    return 1 + count_items(nums)
+
+
+print(count_items([1, 2, 3, 4]))
