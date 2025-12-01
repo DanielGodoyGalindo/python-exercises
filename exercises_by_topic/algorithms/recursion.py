@@ -44,3 +44,20 @@ def sum_recursive(nums):
 
 
 print(sum_recursive([1, 2, 3, 4]))
+
+"""
+Ejercicio 3 — Fibonacci recursivo
+
+fibonacci(6)  # 8
+"""
+
+# For Fibonacci, the recursive function must make two calls.
+
+
+def fibonacci(num):
+    if num == 0 or num == 1:
+        return 1
+    else:
+        return fibonacci(num - 1) + fibonacci(num - 2)
+
+print(fibonacci(6))
