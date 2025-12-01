@@ -14,9 +14,8 @@ def bubble_sort(nums):
         finished = True
         for i in range(n - 1):
             if nums[i] > nums[i + 1]:
-                # Swap elements if they are in the wrong order
                 nums[i], nums[i + 1] = nums[i + 1], nums[i]
-                finished = False  # Found a swap, so we are not finished yet
+                finished = False
     return nums
 
 
