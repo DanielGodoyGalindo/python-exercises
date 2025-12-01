@@ -15,6 +15,15 @@
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/tuples.py">Tuples</a></li>
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/lists.py">Lists</a></li>
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/dicts.py">Dictionaries</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/collections/sets.py">Sets</a></li>
+            </ul>
+            <li>Functions</li>
+            <ul>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/args_kwargs.py">Kwargs</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/args.py">Args</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/callback.py">Callbacks</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/closures.py">Closures</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/scope.py">Scope</a></li>
             </ul>
         </ul>
     </li>

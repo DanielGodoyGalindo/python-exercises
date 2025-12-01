@@ -10,7 +10,9 @@ exercises_by_topic/
     functions/
         scope.py
         closures.py
+        args.py
         args_kwargs.py
+        callback.py
     algorithms/
         recursion.py
         sorting.py

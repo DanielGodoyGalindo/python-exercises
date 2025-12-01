@@ -17,7 +17,6 @@ country: USA
 
 
 def describe_person(name, **details):
-    # person = f"Name: {name}\n age: {details['age']}\n job: {details['job']}\n country: {details['country']}"
     person = f"Name: {name}\n"
     for key, value in details.items():
         person += f"{key}: {value}\n"
