@@ -50,6 +50,22 @@ quicksort([3,6,8,2,5])  # [2,3,5,6,8]
 """
 
 
+def quicksort(nums):
+    if len(nums) <= 1:
+        return nums
+    
+    # get middle number
+    pivot = nums[len(nums)//2]
+    
+    # build a list for all the smaller, equal and bigger numbers, comparing with pivot (middle number)
+    left = [x for x in nums if x < pivot]
+    middle = [x for x in nums if x == pivot]
+    right = [x for x in nums if x > pivot]
+    
+    # recursively sort smaller and bigger numbers.
+    # Concatenate the results to return the sorted list with all numbers.
+    return quicksort(left) + middle + quicksort(right)
+
 """
 Ejercicio 4 — ordenar tuplas por el segundo elemento
 
