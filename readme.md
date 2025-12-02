@@ -25,6 +25,11 @@
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/closures.py">Closures</a></li>
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/scope.py">Scope</a></li>
             </ul>
+            <li>Algorithms</li>
+            <ul>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/algorithms/recursion.py">Recursion</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/algorithms/sorting.py">Sorting</a></li>
+            </ul>
         </ul>
     </li>
     <li><a href="https://www.freecodecamp.org/learn/daily-coding-challenge/archive">FCC Daily Challenges</a>
