@@ -6,8 +6,8 @@
 </div>
 <p>This is the list of exercises so far:</p>
 <ul>
-    <li>Basics1</li>
-    <li>Basics2</li>
+    <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/basics1/basics1.py">Basics1</a></li>
+    <li><a href="http://github.com/DanielGodoyGalindo/python-exercises/blob/master/basics2/basics2.py">Basics2</a></li>
     <li>Exercises by topic
         <ul>
             <li>Collections</li>
@@ -19,16 +19,21 @@
             </ul>
             <li>Functions</li>
             <ul>
-                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/args_kwargs.py">Kwargs</a></li>
-                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/args.py">Args</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/scope.py">Scope</a></li>
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/callback.py">Callbacks</a></li>
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/closures.py">Closures</a></li>
-                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/scope.py">Scope</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/args.py">Args</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/functions/args_kwargs.py">Kwargs</a></li>
             </ul>
             <li>Algorithms</li>
             <ul>
-                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/algorithms/recursion.py">Recursion</a></li>
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/algorithms/sorting.py">Sorting</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/algorithms/recursion.py">Recursion</a></li>
+            </ul>
+            <li>OOP</li>
+            <ul>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/oop/classes.py">Classes</a></li>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/oop/inheritance.py">Inheritance</a></li>
             </ul>
         </ul>
     </li>
@@ -45,4 +50,4 @@
     </li>
 </ul>
 
-<p>I'll be updating this repository with new exercises as I learn new features of this language👍</p>
+<p>I'll be updating this repository with new exercises as I learn new features 👍</p>
