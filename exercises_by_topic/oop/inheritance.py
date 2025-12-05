@@ -138,7 +138,7 @@ for f in figure_list:
     print(f.area())
 
 
-'''
+"""
 4. Herencia múltiple simple
 
 Crea:
@@ -147,21 +147,88 @@ clase Nadador con método nadar()
 clase Pato que herede de ambas
 
 Prueba el orden de resolución de métodos (MRO) con Pato.__mro__.
-'''
+
+The method resolution order (MRO) is the order that Python follows to look up attributes and methods in a class hierarchy. 
+It determines which method or attribute to use when names collide in multiple inheritance scenarios.
+
+https://realpython.com/ref/glossary/mro/
+"""
 
 
+class Flying:
+    def fly(self):
+        return "I can fly!"
 
-'''
+
+class Swimmer:
+    def swim(self):
+        return "I can swim!"
+
+
+class Duck(Flying, Swimmer):
+    def __init__(self):
+        pass
+
+
+ducky = Duck()
+print(ducky.fly())
+print(
+    Duck.__mro__
+)  # (<class '__main__.Duck'>, <class '__main__.Flying'>, <class '__main__.Swimmer'>, <class 'object'>)
+
+"""
 5. Sistema de empleados
 
 Clase base Empleado:
-nombre
-salario_base
-método calcular_salario()
+    nombre
+    salario_base
+    método calcular_salario()
 
 Clases hijas:
 EmpleadoTiempoCompleto → salario base + bonus
 EmpleadoPorHoras → cantidad horas * pago por hora
 
 Crea una lista de empleados y calcula salarios.
-'''
+"""
+
+
+class Employee:
+    def __init__(self, name):
+        self.name = name
+
+    @abstractmethod
+    def calculate_salary():
+        raise NotImplementedError("This method has to be implemented by subclasses.")
+
+
+class Full_time_employee(Employee):
+    def __init__(self, name, base_salary, salary_bonus):
+        super().__init__(name) # calling init from parent class
+        self._base_salary = base_salary
+        self._salary_bonus = salary_bonus
+
+    def calculate_salary(self):
+        print(f"{self.name} (Full_time_employee salary): ")
+        return self._base_salary + self._salary_bonus
+
+
+class Hourly_employee(Employee):
+    def __init__(self, name, worked_hours):
+        super().__init__(name)  
+        self.worked_hours = worked_hours
+        self.hour_pay = 8
+
+    def calculate_salary(self):
+        print(f"{self.name} (Hourly_employee salary): ")
+        return self.worked_hours * self.hour_pay
+
+
+fte1 = Full_time_employee("Dani", 1200, 200)
+he1 = Hourly_employee("Pepito", 40)
+fte2 = Full_time_employee("Fulanito", 2000, 300)
+he2 = Hourly_employee("Menganito", 160)
+
+employees_list = (fte1, fte2, he1, he2)
+
+for e in employees_list:
+    print(e.calculate_salary())
