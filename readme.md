@@ -35,6 +35,10 @@
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/oop/classes.py">Classes</a></li>
                 <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/oop/inheritance.py">Inheritance</a></li>
             </ul>
+            <li>Advanced</li>
+            <ul>
+                <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/exercises_by_topic/advanced/generators.py">Generators</a></li>
+            </ul>
         </ul>
     </li>
     <li><a href="https://www.freecodecamp.org/learn/daily-coding-challenge/archive">FCC Daily Challenges</a>

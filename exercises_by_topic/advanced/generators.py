@@ -30,7 +30,7 @@ print(next(p))
 print(next(p))
 
 
-'''
+"""
 2. Generador que pagine una lista en bloques
 
 Función: def paginate(items, size):
@@ -38,28 +38,45 @@ Función: def paginate(items, size):
 Ejemplo:
 list(paginate([1,2,3,4,5,6], 2))
 # → [[1,2], [3,4], [5,6]]
-'''
+"""
 
-'''
+
+def paginate(items, size):
+    block = []
+    for item in items:
+        block.append(item)
+        if len(block) == size:
+            yield block
+            block = []
+    if block:  # if there is an incomplete block
+        yield block
+
+
+p = paginate([1, 2, 3, 4, 5, 6], 2)
+print(next(p))
+print(next(p))
+print(next(p))
+
+"""
 3. Generador inverso
 
 Crea una versión generadora de reversed() para cualquier iterable.
 
 def my_reversed(iterable):
     ...
-'''
+"""
 
 
-'''
+"""
 4. Generador que lea archivo línea a línea (lazy)
 
 Función: def read_lines(path):
 
 No uses read().
 Debe devolver una línea cada vez.
-'''
+"""
 
-'''
+"""
 5. Generador con send()
 
 Crea un generador contador:
@@ -76,4 +93,4 @@ next(c)        # 5
 next(c)        # 10
 
 Nivel avanzado real.
-'''
+"""
