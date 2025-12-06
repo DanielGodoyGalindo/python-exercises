@@ -1,0 +1,79 @@
+"""
+1. Generador de números primos (infinito)
+
+Crea una función generadora:
+
+def prime_numbers():
+    ...
+
+Que produzca primos sin límite.
+"""
+
+
+def prime_numbers():
+    num = 2
+    while True:
+        is_prime = True
+        for n in range(2, num):
+            if num % n == 0:
+                is_prime = False
+                break
+        if is_prime:
+            yield num
+        num += 1
+
+
+p = prime_numbers()
+print(next(p))
+print(next(p))
+print(next(p))
+print(next(p))
+
+
+'''
+2. Generador que pagine una lista en bloques
+
+Función: def paginate(items, size):
+
+Ejemplo:
+list(paginate([1,2,3,4,5,6], 2))
+# → [[1,2], [3,4], [5,6]]
+'''
+
+'''
+3. Generador inverso
+
+Crea una versión generadora de reversed() para cualquier iterable.
+
+def my_reversed(iterable):
+    ...
+'''
+
+
+'''
+4. Generador que lea archivo línea a línea (lazy)
+
+Función: def read_lines(path):
+
+No uses read().
+Debe devolver una línea cada vez.
+'''
+
+'''
+5. Generador con send()
+
+Crea un generador contador:
+counter = dynamic_counter()
+
+empieza en 0
+cada send(n) cambia el incremento interno
+
+Ejemplo:
+c = dynamic_counter()
+next(c)        # 0
+c.send(5)      # cambia el incremento a 5
+next(c)        # 5
+next(c)        # 10
+
+Nivel avanzado real.
+'''

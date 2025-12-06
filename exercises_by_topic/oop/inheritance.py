@@ -223,7 +223,7 @@ class Hourly_employee(Employee):
         return self.worked_hours * self.hour_pay
 
 
-fte1 = Full_time_employee("Dani", 1200, 200)
+fte1 = Full_time_employee("Dani", -1000, 200)
 he1 = Hourly_employee("Pepito", 40)
 fte2 = Full_time_employee("Fulanito", 2000, 300)
 he2 = Hourly_employee("Menganito", 160)
