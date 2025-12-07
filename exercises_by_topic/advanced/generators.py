@@ -9,6 +9,8 @@ def prime_numbers():
 Que produzca primos sin límite.
 """
 
+import os
+
 
 def prime_numbers():
     num = 2
@@ -89,6 +91,24 @@ Función: def read_lines(path):
 No uses read().
 Debe devolver una línea cada vez.
 """
+
+
+def read_lines(path):
+    file1 = open(path, "r")
+    lines = file1.readlines()
+    for line in lines:
+        yield line
+
+
+dirname = os.path.dirname(__file__)
+path = os.path.join(dirname, "../tree.txt")
+gen = read_lines(path)
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+
 
 """
 5. Generador con send()
