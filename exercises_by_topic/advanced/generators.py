@@ -67,6 +67,20 @@ def my_reversed(iterable):
 """
 
 
+def my_reversed(iterable):
+    for i in reversed(iterable):
+        yield i
+
+
+gen = my_reversed([1, 2, 3, 4, 5, 6])
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+
+
 """
 4. Generador que lea archivo línea a línea (lazy)
 
