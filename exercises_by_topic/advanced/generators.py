@@ -128,3 +128,28 @@ next(c)        # 10
 
 Nivel avanzado real.
 """
+
+
+def dynamic_counter():
+    internal_counter = 0
+    increment = 0
+    received = yield internal_counter
+    while True:
+        if received is not None:
+            increment = received
+        internal_counter += increment
+        received = yield internal_counter
+
+
+
+c = dynamic_counter()
+print(next(c))
+print(next(c))
+c.send(2)
+print(next(c))
+print(next(c))
+c.send(5)
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
