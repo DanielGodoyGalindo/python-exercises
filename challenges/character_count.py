@@ -17,8 +17,8 @@ import re
 
 def count_characters(sentence):
     sentence = re.sub("[^A-Za-z]+", "", sentence).lower()
-    letters = {}
-    already_checked = []
+    letters = {} # dict to store letters as keys and count as value
+    already_checked = [] # list to store already checked letters
     output = []
     for i in sentence:
         for j in sentence:
@@ -26,11 +26,11 @@ def count_characters(sentence):
                 if i in letters:
                     letters[i] += 1
                 else:
-                    letters[i.lower()] = 1
+                    letters[i.lower()] = 1 # add letter to dict for the first time
         if i not in already_checked:
-            already_checked.append(i.lower())
-    sorted_dict = dict(sorted(letters.items()))
-    for key, value in sorted_dict.items():
+            already_checked.append(i.lower()) # append letter when is checked only the first time
+    sorted_dict = dict(sorted(letters.items())) # sort dict
+    for key, value in sorted_dict.items(): # create output list
         output.append(key + " " + str(value))
     return output
 
