@@ -17,7 +17,15 @@ def is_valid_message(message, validation):
     message_splitted = message.split()
     for word in message_splitted:
         letters_to_check += word[0].lower()
-    return True if letters_to_check == validation.lower() else False
+    return letters_to_check == validation.lower()
+
+
+"""
+Pyhonic way:
+def is_valid_message(message, validation):
+    initials = "".join(word[0].lower() for word in message.split())
+    return initials == validation.lower()
+"""
 
 
 print(is_valid_message("Coding challenge are boring.", "cca"))
