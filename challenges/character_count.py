@@ -35,4 +35,20 @@ def count_characters(sentence):
     return output
 
 
+'''
+Pythonic solution:
+
+import re
+
+def count_characters(sentence):
+    sentence = re.sub("[^a-zA-Z]", "", sentence).lower()
+    letters = {}
+
+    for char in sentence:
+        letters[char] = letters.get(char, 0) + 1
+
+    return [f"{k} {v}" for k, v in sorted(letters.items())]
+'''
+
+
 print(count_characters("I love coding challenges!"))
