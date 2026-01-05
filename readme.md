@@ -47,6 +47,7 @@
             <li>Ball Trajectory</li>
             <li>Buzz Fizz</li>
             <li>Character Count</li>
+            <li>Extension Extractor</li>
             <li>Fingerprint Test</li>
             <li>Fizz Buzz</li>
             <li>LCM</li>
