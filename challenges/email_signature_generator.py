@@ -21,6 +21,7 @@ def generate_signature(name, title, company):
         output += "--"
     elif re.search(r"^[S-Z]", name, re.I):
         output += "::"
+    # title and company 
     output += name + ", " + title + " at " + company
     return output
 
