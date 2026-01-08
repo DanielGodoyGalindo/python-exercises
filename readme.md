@@ -52,6 +52,7 @@
             <li>Extension Extractor</li>
             <li>Fingerprint Test</li>
             <li>Fizz Buzz</li>
+            <li>Is It The Weekend?</li>
             <li>LCM</li>
             <li>Longest Word</li>
             <li>Markdown Heading Converter</li>
