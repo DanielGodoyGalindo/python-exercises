@@ -44,9 +44,11 @@
     <li><a href="https://www.freecodecamp.org/learn/daily-coding-challenge/archive">FCC Daily Challenges</a>
         <ul>
             <li>AI Detector</li>
+            <li>Array Shift</li>
             <li>Ball Trajectory</li>
             <li>Buzz Fizz</li>
             <li>Character Count</li>
+            <li>Email Signature Generator</li>
             <li>Extension Extractor</li>
             <li>Fingerprint Test</li>
             <li>Fizz Buzz</li>
