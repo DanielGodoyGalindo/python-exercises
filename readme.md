@@ -53,6 +53,7 @@
             <li>Fingerprint Test</li>
             <li>Fizz Buzz</li>
             <li>GCD</li>
+            <li>Infected</li>
             <li>Is It The Weekend?</li>
             <li>LCM</li>
             <li>Longest Word</li>
