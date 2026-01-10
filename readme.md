@@ -43,7 +43,7 @@
     </li>
     <li><a href="https://www.freecodecamp.org/learn/daily-coding-challenge/archive">FCC Daily Challenges</a>
         <ul>
-            <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/challenges/2025 November">2025 November</a></li>
+            <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/challenges/2025_November">2025 November</a></li>
                 <ul>
                     <li>AI Detector</li>
                     <li>Array Shift</li>
@@ -55,6 +55,7 @@
                     <li>Fingerprint Test</li>
                     <li>Fizz Buzz</li>
                     <li>GCD</li>
+                    <li>Image Search</li>
                     <li>Infected</li>
                     <li>Is It The Weekend?</li>
                     <li>LCM</li>
