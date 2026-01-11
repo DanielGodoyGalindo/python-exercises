@@ -61,6 +61,7 @@
                     <li>LCM</li>
                     <li>Longest Word</li>
                     <li>Markdown Heading Converter</li>
+                    <li>Matrix Builder</li>
                     <li>Message Validator</li>
                     <li>Recipe Scaler</li>
                     <li>Rectangle Count</li>
