@@ -50,6 +50,7 @@
                     <li>Ball Trajectory</li>
                     <li>Buzz Fizz</li>
                     <li>Character Count</li>
+                    <li>Character Limit</li>
                     <li>Counting Cards</li>
                     <li>Email Signature Generator</li>
                     <li>Extension Extractor</li>
