@@ -66,6 +66,7 @@
                     <li>Recipe Scaler</li>
                     <li>Rectangle Count</li>
                     <li>Vowels and Consonants</li>
+                    <li>Weekday Finder</li>
                     <li>What's My Age Again</li>
                     <li>Word Guesser</li>
                     <li>Word Search</li>
