@@ -75,7 +75,7 @@
                     <li>Word Search</li>
                 </ul>
             </li>
-            <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/challenges/2025_November">2025 November</a></li>
+            <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/challenges/2025_December">2025 December</a></li>
                 <ul>
                     <li>Miles to Kilometers</li>
                 </ul>
