@@ -77,6 +77,8 @@
             </li>
             <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/challenges/2025_December">2025 December</a></li>
                 <ul>
+                    <li>Camel to Snake</li>
+                    <li>Markdown Ordered List Item Converter</li>
                     <li>Miles to Kilometers</li>
                 </ul>
             </li>
