@@ -82,6 +82,7 @@
                     <li>Markdown Ordered List Item Converter</li>
                     <li>Miles to Kilometers</li>
                     <li>Permutation Count</li>
+                    <li>String Compression</li>
                     <li>Symmetric Difference</li>
                 </ul>
             </li>
