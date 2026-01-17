@@ -81,6 +81,7 @@
                     <li>Date Formatter</li>
                     <li>Markdown Ordered List Item Converter</li>
                     <li>Miles to Kilometers</li>
+                    <li>Most Frequent</li>
                     <li>Permutation Count</li>
                     <li>Pounds to Kilograms</li>
                     <li>String Compression</li>
