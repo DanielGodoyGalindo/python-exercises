@@ -79,6 +79,7 @@
                 <ul>
                     <li>Camel to Snake</li>
                     <li>Date Formatter</li>
+                    <li>Markdown Bold Parser</li>
                     <li>Markdown Ordered List Item Converter</li>
                     <li>Miles to Kilometers</li>
                     <li>Most Frequent</li>
