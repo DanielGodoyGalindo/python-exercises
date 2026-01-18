@@ -31,5 +31,5 @@ def most_frequent(arr):
     counts = {}
     for element in arr:
         counts[element] = counts.get(element, 0) + 1
-    return max(counts, key=counts.get)
+    return max(counts, key=counts.get)can I use
 """

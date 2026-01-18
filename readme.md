@@ -85,6 +85,7 @@
                     <li>Most Frequent</li>
                     <li>Permutation Count</li>
                     <li>Pounds to Kilograms</li>
+                    <li>Roman Numeral Builder</li>
                     <li>String Compression</li>
                     <li>Symmetric Difference</li>
                 </ul>
