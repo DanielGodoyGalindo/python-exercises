@@ -78,6 +78,7 @@
             <li><a href="https://github.com/DanielGodoyGalindo/python-exercises/blob/master/challenges/2025_December">2025 December</a></li>
                 <ul>
                     <li>Camel to Snake</li>
+                    <li>Capitalize It</li>
                     <li>Date Formatter</li>
                     <li>Game of Life</li>
                     <li>Inventory Update</li>
