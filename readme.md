@@ -79,6 +79,7 @@
                 <ul>
                     <li>Camel to Snake</li>
                     <li>Capitalize It</li>
+                    <li>Consonant Count</li>
                     <li>Date Formatter</li>
                     <li>Game of Life</li>
                     <li>Inventory Update</li>
