@@ -83,6 +83,7 @@
                     <li>Date Formatter</li>
                     <li>Game of Life</li>
                     <li>Inventory Update</li>
+                    <li>Markdown Blockquote Parser</li>
                     <li>Markdown Bold Parser</li>
                     <li>Markdown Ordered List Item Converter</li>
                     <li>Miles to Kilometers</li>
