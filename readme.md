@@ -89,6 +89,7 @@
                     <li>Markdown Ordered List Item Converter</li>
                     <li>Miles to Kilometers</li>
                     <li>Most Frequent</li>
+                    <li>Pairwise</li>
                     <li>Permutation Count</li>
                     <li>Pounds to Kilograms</li>
                     <li>Roman Numeral Builder</li>
