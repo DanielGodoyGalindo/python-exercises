@@ -92,6 +92,7 @@
                     <li>Pairwise</li>
                     <li>Permutation Count</li>
                     <li>Pounds to Kilograms</li>
+                    <li>Purge Most Frequent</li>
                     <li>Roman Numeral Builder</li>
                     <li>Speed Check</li>
                     <li>String Compression</li>
