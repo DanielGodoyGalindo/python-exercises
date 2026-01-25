@@ -82,6 +82,7 @@
                     <li>Checkerboard</li>
                     <li>Consonant Count</li>
                     <li>Date Formatter</li>
+                    <li>Daylight Hours</li>
                     <li>Game of Life</li>
                     <li>Inventory Update</li>
                     <li>Markdown Blockquote Parser</li>
