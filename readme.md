@@ -98,6 +98,7 @@
                     <li>Speed Check</li>
                     <li>String Compression</li>
                     <li>Symmetric Difference</li>
+                    <li>Traveling Shopper</li>
                 </ul>
             </li>
         </ul>
