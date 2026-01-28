@@ -97,6 +97,7 @@
                     <li>Purge Most Frequent</li>
                     <li>Re: Fwd: Fw: Count</li>
                     <li>Roman Numeral Builder</li>
+                    <li>Snowflake Generator</li>
                     <li>Speed Check</li>
                     <li>String Compression</li>
                     <li>Symmetric Difference</li>
