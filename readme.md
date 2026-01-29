@@ -100,6 +100,7 @@
                     <li>Snowflake Generator</li>
                     <li>Speed Check</li>
                     <li>String Compression</li>
+                    <li>Sum of Divisors</li>
                     <li>Symmetric Difference</li>
                     <li>Traveling Shopper</li>
                 </ul>
