@@ -96,6 +96,7 @@
                     <li>Pounds to Kilograms</li>
                     <li>Purge Most Frequent</li>
                     <li>Re: Fwd: Fw: Count</li>
+                    <li>Rock, Paper, Scissors</li>
                     <li>Roman Numeral Builder</li>
                     <li>Snowflake Generator</li>
                     <li>Speed Check</li>
