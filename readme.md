@@ -98,6 +98,7 @@
                     <li>Re: Fwd: Fw: Count</li>
                     <li>Rock, Paper, Scissors</li>
                     <li>Roman Numeral Builder</li>
+                    <li>SCREAMING_SNAKE_CASE</li>
                     <li>Snowflake Generator</li>
                     <li>Speed Check</li>
                     <li>String Compression</li>
