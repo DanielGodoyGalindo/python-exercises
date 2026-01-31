@@ -103,6 +103,7 @@
                     <li>Speed Check</li>
                     <li>String Compression</li>
                     <li>Sum of Divisors</li>
+                    <li>Sum the String</li>
                     <li>Symmetric Difference</li>
                     <li>Takeoff Fuel</li>
                     <li>Traveling Shopper</li>

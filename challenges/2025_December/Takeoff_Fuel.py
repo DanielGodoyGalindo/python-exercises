@@ -14,7 +14,6 @@ Do not include decimals in the return number.
 5. fuel_to_add(1000, 50000) should return 12209.
 """
 
-
 from math import ceil
 
 
