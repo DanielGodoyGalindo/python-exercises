@@ -104,6 +104,7 @@
                     <li>String Compression</li>
                     <li>Sum of Divisors</li>
                     <li>Symmetric Difference</li>
+                    <li>Takeoff Fuel</li>
                     <li>Traveling Shopper</li>
                 </ul>
             </li>
